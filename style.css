@@ -356,9 +356,9 @@ input[type="text"] {
         margin-bottom: 7px;
     }
 
-    .sale {
+/*     .sale {
         margin-bottom: 0 !important;
-    }
+    } */
 
     .imageslide {
         display: flex;
@@ -580,4 +580,5 @@ input[type="text"] {
         padding: 13px 18px;
         border-radius: 50%;
     }
+
 }
