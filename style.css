@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .topmsg {
@@ -406,10 +407,7 @@ input[type="text"] {
 }
 
 @media (max-width: 576px) {
-    body {
-        overflow-x: hidden;
-    }
-
+    
     .topmsg p {
         font-size: 10px;
     }
@@ -498,4 +496,5 @@ input[type="text"] {
         padding: 13px 18px;
         border-radius: 50%;
     }
+
 }
