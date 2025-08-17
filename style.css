@@ -429,7 +429,7 @@ input[type="text"] {
     }
 
     .sale p {
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .sale p::before {
@@ -498,3 +498,4 @@ input[type="text"] {
     }
 
 }
+
