@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
 .topmsg {
@@ -135,7 +134,7 @@ input[type="text"] {
     width: 13%;
 }
 
-/* .timer-code { */
+/* timer-code  */
 
 .time-box span {
     display: inline-block;
@@ -157,9 +156,10 @@ input[type="text"] {
     display: flex;
     align-items: center;
 } */
-.maincontainer {
-    padding: 0 50px;
-}
+
+/* .maincontainer {
+    margin: 0 100px;
+} */
 
 .prodcontainer {
     display: flex;
@@ -169,6 +169,7 @@ input[type="text"] {
     scroll-behavior: smooth;
     gap: 20px;
     padding: 0 10px;
+    height: 60vh;
 }
 
 .prodcontainer::-webkit-scrollbar {
@@ -176,7 +177,7 @@ input[type="text"] {
 }
 
 .product-card {
-    flex: 0 0 auto;
+
     width: 220px;
     max-width: 250px;
     border: 1px solid #dee2e6;
@@ -235,12 +236,6 @@ input[type="text"] {
     cursor: pointer;
 }
 
-/* .products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   */
-
 .seemore {
     display: flex;
     justify-content: center;
@@ -284,12 +279,52 @@ input[type="text"] {
     transition: 0.3s ease-in-out;
 }
 
+.purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
+.purchase button {
+    padding: 2px 7px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
 
+.buy {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
+.buy:hover {
+    background-color: #dee2e6;
+    color: black;
+}
 
+.addcart {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-
+.addcart:hover {
+    /* background-color: #dee2e6; */
+    color: black;
+}
 
 
 
@@ -320,6 +355,10 @@ input[type="text"] {
         margin-bottom: 7px;
     }
 
+    .sale {
+        margin-bottom: 0 !important;
+    }
+
     .imageslide {
         display: flex;
         justify-content: center;
@@ -341,10 +380,6 @@ input[type="text"] {
         gap: 30px;
     }
 
-    .sale p {
-        margin-left: 10px;
-    }
-
     .sale p:hover::before {
         width: 18%;
     }
@@ -355,9 +390,9 @@ input[type="text"] {
         font-size: 14px;
     }
 
-    /*.maincontainer {
+    /* .maincontainer {
         margin: 0 70px;
-    }*/
+    } */
 
     .prodcontainer {
         display: flex;
@@ -404,10 +439,62 @@ input[type="text"] {
         padding: 13px 19px;
         border-radius: 50%;
     }
+
+    .purchase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .purchase button {
+        padding: 2px 5px;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid #dee2e6;
+        font-size: 12px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .purchase button:hover {
+        transition: 0.3s ease-in-out;
+    }
+
+    .buy {
+        background-color: red;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .buy:hover {
+        background-color: #dee2e6;
+        color: black;
+    }
+
+    .addcart {
+        background-color: transparent;
+        color: red;
+        border: 2px solid red;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .addcart:hover {
+        /* background-color: #dee2e6; */
+        color: black;
+    }
+
 }
 
 @media (max-width: 576px) {
-    
+
     .topmsg p {
         font-size: 10px;
     }
@@ -426,10 +513,6 @@ input[type="text"] {
 
     .ordericon i {
         padding: 0px;
-    }
-
-    .sale p {
-        margin-left: 0px;
     }
 
     .sale p::before {
@@ -463,9 +546,9 @@ input[type="text"] {
         font-size: 13px;
     }
 
-    /*.maincontainer {
+    /* .maincontainer {
         margin: 0 50px;
-    }*/
+    } */
 
     .prodcontainer {
         display: flex;
@@ -496,11 +579,4 @@ input[type="text"] {
         padding: 13px 18px;
         border-radius: 50%;
     }
-
 }
-
-
-
-
-
-
