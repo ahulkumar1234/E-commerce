@@ -157,9 +157,9 @@ input[type="text"] {
     display: flex;
     align-items: center;
 } */
-.maincontainer {
-    margin-left: 30px;
-}
+/*.maincontainer {
+    margin: 0 100px;
+}*/
 
 .prodcontainer {
     display: flex;
@@ -498,6 +498,7 @@ input[type="text"] {
     }
 
 }
+
 
 
 
