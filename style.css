@@ -157,9 +157,9 @@ input[type="text"] {
     display: flex;
     align-items: center;
 } */
-.maincontainer {
+/*.maincontainer {
     margin: 0 100px;
-}
+}*/
 
 .prodcontainer {
     display: flex;
@@ -355,9 +355,9 @@ input[type="text"] {
         font-size: 14px;
     }
 
-    .maincontainer {
+    /*.maincontainer {
         margin: 0 70px;
-    }
+    }*/
 
     .prodcontainer {
         display: flex;
@@ -463,9 +463,9 @@ input[type="text"] {
         font-size: 13px;
     }
 
-    .maincontainer {
+    /*.maincontainer {
         margin: 0 50px;
-    }
+    }*/
 
     .prodcontainer {
         display: flex;
@@ -498,4 +498,5 @@ input[type="text"] {
     }
 
 }
+
 
