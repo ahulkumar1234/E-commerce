@@ -334,19 +334,21 @@ input[type="text"] {
 }
 
 .purchase button {
+    border: 1px solid red;
     padding: 2px 7px;
-    border: none;
     border-radius: 5px;
-    border: 1px solid #dee2e6;
     font-size: 15px;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
+.purchase button:hover {
+    transition: 0.3s ease-in-out;
+}
+
 .buy {
     background-color: transparent;
     color: red;
-    border: 2px solid red;
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
@@ -354,12 +356,14 @@ input[type="text"] {
 }
 
 .buy:hover {
-    /* background-color: #dee2e6; */
+    transition: 0.3s ease-in-out;
     color: black;
+    border: 1px solid #dee2e6;
 }
 
 .addcart {
     background-color: red;
+    border: 1px solid black;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -371,6 +375,8 @@ input[type="text"] {
 .addcart:hover {
     background-color: #dee2e6;
     color: black;
+    border: none;
+
 }
 
 
@@ -492,34 +498,22 @@ input[type="text"] {
 
     .purchase button {
         padding: 2px 5px;
-        border: none;
         border-radius: 5px;
-        border: 1px solid #dee2e6;
         font-size: 12px;
         cursor: pointer;
+        border: 1px solid red;
         margin-bottom: 10px;
-    }
-
-    .purchase button:hover {
-        transition: 0.3s ease-in-out;
     }
 
     .buy {
         padding: 8px 16px;
         border-radius: 5px;
-    }
-
-    .buy:hover {
-        color: black;
+        border: 1px solid red;
     }
 
     .addcart {
         padding: 8px 16px;
         border-radius: 5px;
-    }
-
-    .addcart:hover {
-        color: black;
     }
 
 }
