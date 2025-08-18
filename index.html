@@ -33,8 +33,13 @@
                 </div>
                 <div class="ordericon d-flex align-items-center gap-3">
                     <button><i class="fa-regular fa-heart"></i></button>
-                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+
+                    <div class="cart-wrapper">
+                        <button class="cartbtn"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span class="cartcount">1</span>
+                    </div>
                 </div>
+
                 <!-- hambargar button -->
                 <button class="btn d-block d-md-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -211,7 +216,7 @@
                                 <p class="offprice">120$</p>
                                 <p class="realprice">160$</p>
                             </div>
-                           <div class="purchase">
+                            <div class="purchase">
                                 <button class="buy">Buy Now</button>
                                 <button class="addcart">Add to cart</button>
                             </div>
