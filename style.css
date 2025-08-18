@@ -204,7 +204,6 @@ input[type="text"] {
     background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
-
 .prodcontainer {
     display: flex;
     /* justify-content: center; */
@@ -595,6 +594,14 @@ input[type="text"] {
         flex: 0 0 auto;
         width: 200px;
         min-width: auto;
+    }
+
+    .prodcontainer::before {
+        width: 50px;
+    }
+
+    .prodcontainer::after {
+        width: 50px;
     }
 
     .scrollbtns {
