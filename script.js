@@ -63,4 +63,46 @@ scrollnextBtn.addEventListener("click", () => {
     productcontainer.scrollLeft += 300; // Adjust the scroll amount as needed
 })
 
-//------------------------------product scroll end-------------------------
+//------------------------------Add to cart-------------------------
+
+
+// const cart = [];
+
+// function addToCart(product) {
+//     cart.push(product);
+//     console.log(`Added ${product.name} to cart. Total items: ${cart.length}`);
+// }
+// const addToCartButtons = document.querySelectorAll('.addcart');
+
+// addToCartButtons.forEach((button) => {
+//     button.addEventListener("click", function () {
+
+//     })
+// })
+
+
+//------------------------------productcategory scroll-------------------------
+
+let productcategory = document.querySelector('.product-category');
+let categoryCards = document.querySelectorAll('.categorybox');
+
+let categoryScrollPrevBtn = document.querySelector('.scrollbtns .prev');
+let categoryScrollNextBtn = document.querySelector('.scrollbtns .next');
+
+productcategory.addEventListener("wheel", function (e) {
+    e.preventDefault();
+    console.log(e.deltaY);
+    productcategory.scrollLeft += e.deltaY;
+});
+
+categoryScrollPrevBtn.addEventListener("click",()=>{
+
+ productcategory.scrollLeft -= 150;
+
+})
+
+categoryScrollNextBtn.addEventListener("click",()=>{
+
+ productcategory.scrollLeft += 150;
+
+})
