@@ -35,7 +35,9 @@
                     <button><i class="fa-regular fa-heart"></i></button>
 
                     <div class="cart-wrapper">
-                        <button class="cartbtn"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="cartbtn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
                         <span class="cartcount">1</span>
                     </div>
                 </div>
@@ -50,6 +52,18 @@
 
 
 
+        <!-- cart menu offcanvas -->
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+            </div>
+        </div>
 
 
         <!-- mobile menu offcanvas -->
@@ -423,6 +437,51 @@
             </div>
             <div class="seemore">
                 <button>View All Products</button>
+            </div>
+        </div>
+
+        <div class="maincontainer prodmaincontainer m-5 ">
+            <p>Categories</p>
+            <h1>Browse By Category</h1>
+
+            <div class="scrollbtns gap-3">
+                <div class="prev ">
+                    <button><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="next ">
+                    <button><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="product-category justify-content-xl-center my-3 gap-3">
+
+                <div class="categorybox">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Camera</span>
+                </div>
+                <div class="categorybox">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Head Phones</span>
+                </div>
+                <div class="categorybox">
+                    <i class="fa-solid fa-desktop"></i>
+                    <span>TV</span>
+                </div>
+                <div class="categorybox">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+                <div class="categorybox">
+                    <img src="image/phone icon.png" alt="">
+                    <span>Phones</span>
+                </div>
+                <div class="categorybox">
+                    <img src="image/watch icon.png" alt="">
+                    <span>Smart Watch</span>
+                </div>
+                <div class="categorybox">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Computers</span>
             </div>
         </div>
 
