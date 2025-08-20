@@ -39,10 +39,10 @@ body {
     content: "";
     position: absolute;
     width: 0;
-    height: 3px;
+    height: 1px;
     background-color: red;
     left: 0;
-    bottom: -5px;
+    bottom: -2px;
 }
 
 .nav-list li a:hover:after {
@@ -54,6 +54,12 @@ body {
     text-decoration: none;
     color: black;
     position: relative;
+}
+
+.nav-list li a:hover {
+    color: red;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .cart-wrapper {
@@ -186,7 +192,7 @@ input[type="text"] {
     width: 80px;
     height: 100%;
     z-index: 99;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
 }
 
 .prodcontainer::after {
@@ -197,7 +203,7 @@ input[type="text"] {
     width: 80px;
     height: 100%;
     z-index: 99;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
 }
 
 .prodcontainer {
@@ -208,7 +214,7 @@ input[type="text"] {
     scroll-behavior: smooth;
     gap: 20px;
     padding: 0 10px;
-    height: 420px;
+    height: 380px;
 }
 
 .prodcontainer::-webkit-scrollbar {
@@ -405,6 +411,7 @@ input[type="text"] {
     font-size: 14px;
     margin-top: 5px;
 }
+
 .categorybox i {
     font-size: 2rem;
 }
@@ -442,13 +449,41 @@ input[type="text"] {
     cursor: pointer;
 }
 
+/* best selling product section */
 
+.ts-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 
+.ts-products:hover {
+    transform: scale(1.05);
+}
 
+.allprodbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.allprodbtn button {
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: transparent;
+    color: red;
+    font-size: 15px;
+}
 
-
-
+.allprodbtn button:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
 
 
 
