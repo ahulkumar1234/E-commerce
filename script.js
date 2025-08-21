@@ -63,23 +63,6 @@ scrollnextBtn.addEventListener("click", () => {
     productcontainer.scrollLeft += 300; // Adjust the scroll amount as needed
 })
 
-//------------------------------Add to cart-------------------------
-
-
-// const cart = [];
-
-// function addToCart(product) {
-//     cart.push(product);
-//     console.log(`Added ${product.name} to cart. Total items: ${cart.length}`);
-// }
-// const addToCartButtons = document.querySelectorAll('.addcart');
-
-// addToCartButtons.forEach((button) => {
-//     button.addEventListener("click", function () {
-
-//     })
-// })
-
 
 //------------------------------productcategory scroll-------------------------
 
@@ -91,8 +74,8 @@ let categoryScrollNextBtn = document.querySelector('.scrollbtns .next');
 
 productcategory.addEventListener("wheel", function (e) {
     e.preventDefault();
-    console.log(e.deltaY);
     productcategory.scrollLeft += e.deltaY;
+    productcategory.scrollLeft += e.deltaX;
 });
 
 categoryScrollPrevBtn.addEventListener("click",()=>{
@@ -105,4 +88,17 @@ categoryScrollNextBtn.addEventListener("click",()=>{
 
  productcategory.scrollLeft += 150;
 
+})
+
+
+//------------------------------Top selling product-------------------------
+
+let topSellingContainer = document.querySelector('.ts-container');
+let topSellingCards = document.querySelectorAll('.ts-products');
+
+
+topSellingContainer.addEventListener("wheel",function(e){
+    e.preventDefault();
+    topSellingContainer.scrollLeft += e.deltaY;
+    topSellingContainer.scrollLeft += e.deltaX;
 })
