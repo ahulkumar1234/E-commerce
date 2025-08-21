@@ -700,7 +700,7 @@ input[type="text"] {
     }
 
     .maincontainer {
-        margin: 0;
+        margin: 16px;
     }
 
     .prodcontainer {
@@ -754,3 +754,4 @@ input[type="text"] {
         margin-bottom: 1rem !important;
     }
 }
+
