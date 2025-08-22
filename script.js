@@ -78,15 +78,15 @@ productcategory.addEventListener("wheel", function (e) {
     productcategory.scrollLeft += e.deltaX;
 });
 
-categoryScrollPrevBtn.addEventListener("click",()=>{
+categoryScrollPrevBtn.addEventListener("click", () => {
 
- productcategory.scrollLeft -= 150;
+    productcategory.scrollLeft -= 150;
 
 })
 
-categoryScrollNextBtn.addEventListener("click",()=>{
+categoryScrollNextBtn.addEventListener("click", () => {
 
- productcategory.scrollLeft += 150;
+    productcategory.scrollLeft += 150;
 
 })
 
@@ -97,8 +97,23 @@ let topSellingContainer = document.querySelector('.ts-container');
 let topSellingCards = document.querySelectorAll('.ts-products');
 
 
-topSellingContainer.addEventListener("wheel",function(e){
+topSellingContainer.addEventListener("wheel", function (e) {
     e.preventDefault();
     topSellingContainer.scrollLeft += e.deltaY;
     topSellingContainer.scrollLeft += e.deltaX;
 })
+
+
+let index = 0;
+const slides = document.querySelectorAll(".slider-item");
+showSlide() // pehla slide show karne ke liye
+function showSlide() {
+    slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+    index = (index + 1) % slides.length; // loop
+}
+
+setInterval(showSlide, 3000); // har 3 sec baad change
