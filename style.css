@@ -24,6 +24,7 @@ body {
     background-color: #f8f9fa;
     padding: 0 20px;
     border-bottom: 1px solid #dee2e6;
+    position: sticky;
 }
 
 .navbar i {
@@ -497,7 +498,35 @@ input[type="text"] {
     transition: 0.3s ease-in-out;
 }
 
+/* <!-- slider section --> */
+.slidercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
 
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* .slider-item img {
+    object-fit: contain;
+} */
+
+.active {
+    opacity: 1;
+}
 
 
 
@@ -754,4 +783,3 @@ input[type="text"] {
         margin-bottom: 1rem !important;
     }
 }
-
