@@ -391,6 +391,7 @@ input[type="text"] {
     align-items: center;
     /* justify-content: center; */
     height: 120px;
+    margin-bottom: 50px !important;
 }
 
 .categorybox {
@@ -481,6 +482,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px 0;
 }
 
 .allprodbtn button {
@@ -499,35 +501,90 @@ input[type="text"] {
 }
 
 /* <!-- slider section --> */
+
 .slidercontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-.slider {
     position: relative;
     width: 100%;
-    height: 600px;
+    max-width: 100%;
+    margin: auto;
     overflow: hidden;
+    transition: all 1s ease-in-out;
 }
 
 .slider-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    display: none;
 }
 
-/* .slider-item img {
-    object-fit: contain;
-} */
+.slider-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 .active {
-    opacity: 1;
+    display: block;
 }
 
+/* Another product section */
+
+.an-maincontainer {
+    margin-top: 5rem;
+}
+
+.an-container {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    height: 350px;
+    cursor: pointer;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+.an-maincontainer ::-webkit-scrollbar {
+    display: none;
+}
+
+.an-card {
+    flex: 0 0 auto;
+    border: 1px solid #dee0e1;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.an-card:hover {
+    transform: scale(1.05);
+    border: 1px solid red;
+}
+
+.an-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* <!-- New Arrivals section--> */
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* left big + right two */
+    grid-template-rows: 1fr 1fr;
+    /* 2 rows */
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Left image span both rows */
+.grid-layout .big {
+    grid-row: span 2;
+}
+
+/* Images styling */
+.grid-layout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -673,7 +730,15 @@ input[type="text"] {
         margin-bottom: 2rem !important;
     }
 
+    .an-maincontainer {
+        margin-top: 4rem;
+    }
+
+    .grid-layout {
+        gap: 10px;
+    }
 }
+
 
 @media (max-width: 576px) {
 
@@ -782,5 +847,11 @@ input[type="text"] {
     .ts-container {
         margin-bottom: 1rem !important;
     }
-}
 
+    .an-maincontainer {
+        margin-top: 3rem;
+    }
+    .grid-layout {
+        gap: 8px;
+    }
+}
